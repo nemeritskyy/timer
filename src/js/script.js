@@ -15,7 +15,7 @@ function getAbs(number) {
 
 function startTimer() {
   inputs.style.display = 'none';
-  const getCurrentTime = () => moment();
+	const getCurrentTime = () => moment(); // eslint-disable-line
   const finishTime = getCurrentTime().add(getFieldValue(), 'minutes');
 
   function checkTime() {
