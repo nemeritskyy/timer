@@ -7,6 +7,21 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+        <div class="container" id="timer-container">
+            <div class="container__title">Timer moment.js</div>
+            <div class="container__fields" id="timer-field">
+                <div class="container__line">
+                    <input type="button" id="timer-add-time" value="+" class="timer timer__button timer__button-add">
+                    <input type="number" id="timer-minutes-field" value="1" class="timer timer__field"> 
+                    <input type="button" id="timer-minus-time" value="-" class="timer timer__button timer__button-minus">
+                </div>
+                <div class="container__line">
+                    <input type="button" id="timer-start" value="Start timer" class="timer timer__button-add">
+                </div>
+            </div>
+            <div id="timer-remain"></div>
+        </div>
+		<script src="js/moment.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
